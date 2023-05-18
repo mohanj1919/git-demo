@@ -11,5 +11,5 @@ jobs:
       - run: git checkout master
       - run: git fetch
       - run: git pull
-      - run: git checkout develop
+      - run: git checkout qa
       - run: git merge master
