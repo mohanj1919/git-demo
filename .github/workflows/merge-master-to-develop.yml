@@ -1,0 +1,11 @@
+name: Merge master into develop
+on:
+  push:
+    branches:
+      - master
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: git merge master
