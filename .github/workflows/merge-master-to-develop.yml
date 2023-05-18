@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: get checkout master
+      - run: git checkout master
       - run: git fetch
       - run: git pull
       - run: git checkout develop
